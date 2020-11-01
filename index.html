@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDdk4fxUyL-pH1oVsclATJO7m9_s5jj7os",
+    authDomain: "todoapp-8563b.firebaseapp.com",
+    databaseURL: "https://todoapp-8563b.firebaseio.com",
+    projectId: "todoapp-8563b",
+    storageBucket: "todoapp-8563b.appspot.com",
+    messagingSenderId: "2174598288",
+    appId: "1:2174598288:web:6e94e419f0219a16882c15",
+    measurementId: "G-XD2JXL46Y9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<style>
+  
+    body
+    {
+        text-align: center;
+    }
+    .btn
+    {
+        background-color: blue;
+    } 
+</style>
+
+    <body>
+        <div>
+            <input placeholder="Enter todo" type="text" id="val">
+            <button onclick="clickk()">Add Item</button>
+            <button onclick="delAll()">Delete ALl</button>
+        </div>
+        <div>
+            <ul id="list">
+
+            </ul>
+        </div>
+
+
+
+    <script src="app.js"></script>
+    </body>
+    
+
+
+    </html>
